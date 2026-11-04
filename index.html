@@ -3,52 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mavrični svet - Varni klepet</>
+    <title>Mavrični svet - Varni klepet</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #fcf6bd;
             color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-        header {
+            justify-content: center;
+            height: 100vh;
+            box-sizing: border-box;
             text-align: center;
-            margin-bottom: 20px;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
         }
         h1 {
             color: #d4a373;
+            margin-top: 0;
         }
-        .chat-container {
-            width: 100%;
-            max-width: 900px;
-            height: 650px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
+        p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+        .btn {
+            display: inline-block;
+            background-color: #d4a373;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background-color: #bc8a5f;
         }
     </style>
 </head>
 <body>
 
-    <header>
+    <div class="card">
         <h1>Mavrični svet</h1>
-        <p>Miren, varen in prijeten kotiček za klepet. Tukaj velja spoštovanje!</p>
-    </header>
-
-    <div class="chat-container">
-        <!-- Vgrajen spletni klepet za tvoj kanal -->
-        <iframe src="https://web.libera.chat/?channels=#MavricniSvet"></iframe>
+        <p>Miren, varen in prijeten kotiček za klepet. Tukaj velja medsebojno spoštovanje!</p>
+        
+        <!-- Gumb za vstop v tvoj kanal -->
+        <a href="https://web.libera.chat/?channels=#MavricniSvet" target="_blank" class="btn">Vstopi v klepet (#MavricniSvet)</a>
     </div>
 
 </body>
 </html>
+
