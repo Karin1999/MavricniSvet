@@ -15,7 +15,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             box-sizing: border-box;
             text-align: center;
         }
@@ -24,17 +24,30 @@
             padding: 40px;
             border-radius: 16px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            max-width: 500px;
+            max-width: 600px;
             width: 100%;
         }
         h1 {
             color: #d4a373;
             margin-top: 0;
         }
-        p {
+        h3 {
+            color: #bc8a5f;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        p, ul {
             line-height: 1.6;
             color: #555;
+            text-align: left;
+        }
+        ul {
+            padding-left: 20px;
             margin-bottom: 30px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 20px;
         }
         .btn {
             display: inline-block;
@@ -46,6 +59,7 @@
             text-decoration: none;
             border-radius: 8px;
             transition: background 0.2s;
+            text-align: center;
         }
         .btn:hover {
             background-color: #bc8a5f;
@@ -55,13 +69,25 @@
 <body>
 
     <div class="card">
-        <h1>Mavrični svet</h1>
-        <p>Miren, varen in prijeten kotiček za klepet. Tukaj velja medsebojno spoštovanje!</p>
+        <div class="intro">
+            <h1>Mavrični svet</h1>
+            <p style="text-align: center;">Miren, varen in prijeten kotiček za klepet. Tukaj velja medsebojno spoštovanje!</p>
+        </div>
+
+        <h3>Zakaj ime "Mavrični svet"?</h3>
+        <p>Mavrica v našem imenu ne predstavlja določenih skupin ali usmeritev, temveč čisto naravno simboliko: mavrica je čudovit spekter različnih barv, ki v sozvočju ustvarjajo celoto. Pomeni raznolikost misli, ustvarjalnosti, energije in topline – tako kot so različni ljudje, ki se tu zbirajo.</p>
+
+        <h3>Pravila kanala</h3>
+        <ul>
+            <li><b>Spoštovanje:</b> Medsebojno spoštovanje je na prvem mestu. Kakršnokoli žaljenje ali napadanje ni dovoljeno.</li>
+            <li><b>Ničelna toleranca:</b> Za nesramno vedenje ali ustrahovanje velja takojšen izklop (ban po omrežnih podatkih).</li>
+            <li><b>Prijetno vzdušje:</b> To je prostor za sprostitev, dobre pogovore in mirno druženje.</li>
+        </ul>
         
-        <!-- Gumb za vstop v tvoj kanal -->
-        <a href="https://web.libera.chat/?channels=#MavricniSvet" target="_blank" class="btn">Vstopi v klepet (#MavricniSvet)</a>
+        <div style="text-align: center;">
+            <a href="https://web.libera.chat/?channels=#MavricniSvet" target="_blank" class="btn">Vstopi v klepet (#MavricniSvet)</a>
+        </div>
     </div>
 
 </body>
 </html>
-
